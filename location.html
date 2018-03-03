@@ -3,6 +3,32 @@ layout: default
 title: Ojo Caliente
 subtitle: Where We've Landed
 banner-image: images/river.jpg
+values:
+  - name: One Value
+    icon: fa-heart
+    description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll      burmese ragdoll american bobtail.
+  - name: Second Value
+    icon: fa-hand-lizard
+    description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll      burmese ragdoll american bobtail.
+  - name: Third Value
+    icon: fa-smile
+    description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll      burmese ragdoll american bobtail.
+  - name: Last Value
+    icon: fa-recycle
+    description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll      burmese ragdoll american bobtail.
+links:
+  - name: site
+    image: images/sand.jpg
+    url: http://taos.org
+  - name: another site
+    image: images/river.jpg
+    url: http://taos.org
+  - name: third site
+    image: images/taosPueblo.jpg
+    url: http://taos.org
+  - name: last site
+    image: images/taosJK.jpg
+    url: http://taos.org
 ---
 
 <section class="padding-sides">
@@ -10,22 +36,13 @@ banner-image: images/river.jpg
   </p>
 </section>
 <section class="grid-noGutter">
+  {% for value in page.values %}
   <div class="col-3 bg-image-columns" style="background-image:url('images/sand.jpg')">
-    <h4>Value</h4>
-    <p>Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american bobtail. </p>
+    <i class="fas {{value.icon}}"></i>
+    <h3>{{value.name}}</h3>
+    <p>{{value.description}} </p>
   </div>
-  <div class="col-3 bg-image-columns" style="background-image:url('images/sand.jpg')">
-    <h4>Value</h4>
-    <p>Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american bobtail. </p>
-  </div>
-  <div class="col-3 bg-image-columns" style="background-image:url('images/sand.jpg')">
-    <h4>Value</h4>
-    <p>Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american bobtail. </p>
-  </div>
-  <div class="col-3 bg-image-columns" style="background-image:url('images/sand.jpg')">
-    <h4>Value</h4>
-    <p>Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american bobtail. </p>
-  </div>
+  {% endfor %}
 </section>
 <section class="grid-noGutter">
   <div class="col-4 grid-noGutter centered bg-image" style="background-image:url('images/mountains.jpg')">
@@ -38,18 +55,13 @@ banner-image: images/river.jpg
       <h3>What's Nearby</h3>
       <p>Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten. Sphynx   bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american   bobtail.iger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten.  Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american  bobtail.</p>
       <div class="grid-noGutter">
+        {% for link in page.links %}
         <div class="col-3">
-          <a class="button-picture" href="#" style="background-image:url('images/taosPueblo.jpg')"> Taos</a>
+          <a class="button-picture" href="{{link.url}}" style="background-image:url({{link.image}})">
+            {{link.name}}
+          </a>
         </div>
-        <div class="col-3">
-          <a class="button-picture" href="#" style="background-image:url('images/taosPueblo.jpg')"> Taos</a>
-        </div>
-        <div class="col-3">
-          <a class="button-picture" href="#" style="background-image:url('images/taosPueblo.jpg')"> Taos</a>
-        </div>
-        <div class="col-3">
-          <a class="button-picture" href="#" style="background-image:url('images/taosPueblo.jpg')"> Taos</a>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
