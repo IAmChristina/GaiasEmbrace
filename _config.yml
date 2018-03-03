@@ -1,0 +1,4 @@
+collections:
+  recipes:
+    output: true
+    permalink: /:categories/:path

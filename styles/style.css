@@ -3,7 +3,7 @@
   padding: 0;
   margin:0;
   box-sizing: border-box;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 [class*=grid-], [class*=grid_], [class~=grid]{
@@ -21,13 +21,18 @@ section{
   padding: .5% 2%;
 }
 
+div{
+  padding: 3.5% 2%;
+  /* margin: .2rem .2rem; */
+}
+
 h1, h2, h3, h4{
   font-family: 'Fira Sans', sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: -0.03em;
   margin: 0.3rem 0;
-  padding: 3.5% 2%;
+  /* padding: 3.5% 2%; */
 }
 
 h1{
@@ -110,7 +115,7 @@ footer {
   color: black;
   padding: 25% 2%;
   object-fit: contain;
-  min-width: 75%;
+  min-width: 90%;
   display: inline-block;
   text-align: center;
 }
@@ -199,10 +204,10 @@ a:hover{
 
 /* Location Page */
 
-.bg-image-small{
-  height: 100;
-  background-position: center;
-  background-repeat: no-repeat;
+.bg-image-columns{
+  text-align: center;
+  padding: 2rem;
+  margin: .5rem;
 }
 
 a.bg-image:hover{
