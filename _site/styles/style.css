@@ -1,0 +1,241 @@
+/* resets */
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  border: 1px solid yellow;
+}
+
+[class*=grid-], [class*=grid_], [class~=grid]{
+  margin: 0;
+}
+
+/* universal styles  */
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+section{
+  padding: .5% 2%;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin: 0.3rem 0;
+  padding: 3.5% 2%;
+}
+
+h1{
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+ }
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p{
+  line-height: 1.8;
+  margin: 1rem 0;
+  padding: 3.5% 2%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  padding: 2% 4%;
+  object-fit: contain;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+[class*=col] {
+padding: 2%;
+}
+
+/* header and footer */
+
+header{
+  /* min-height: 40%; */
+  padding: 1vh 3vw;
+}
+
+footer {
+  padding: 1vh 3vw;
+}
+
+/*  utility classes */
+
+.left{
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.centered{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.padding-sides{
+  padding: 2.5% 9%;
+}
+
+.button{
+  padding: 10px;
+  margin:20px;
+  text-align: center;
+}
+
+.button-picture{
+  text-decoration: none;
+  color: black;
+  padding: 25% 2%;
+  object-fit: contain;
+  min-width: 75%;
+  display: inline-block;
+  text-align: center;
+}
+
+.dark{
+  color: #e6e6e6;
+  background-color: rgba(152, 152, 131,.8);
+}
+
+.light-text{
+  color: #e6e6e6;
+  background-color: rgba(152, 152, 131,.8);
+}
+
+.light{
+  background-color: rgba(183, 159, 172,.5);
+}
+
+.feature-block{
+
+}
+
+.banner {
+  height: 100vh;
+}
+
+header nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 1.2rem;
+  padding: 5vh 5vw;
+}
+
+.banner-content {
+  height: 100%;
+}
+
+.banner-content h1, .banner-content h3{
+  font-family:'Over the Rainbow', cursive;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  padding: 1.5% 2%;
+}
+
+.banner-content h1{
+  letter-spacing: .4rem;
+}
+
+.bg-image{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  /* height: auto; */
+}
+
+a:hover{
+
+}
+
+
+.special-font{
+  font-family:'Over the Rainbow', cursive;
+  letter-spacing: .1em;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.feature-block.header{
+
+}
+
+.feature-block-icon{
+
+}
+
+.feature-block-p{
+
+}
+
+/* Home page */
+
+/* Location Page */
+
+.bg-image-small{
+  height: 100;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a.bg-image:hover{
+
+}
+
+/* Ships Page */
+
+
+
+/* Crew Page */
+
+.crew-member-name{
+
+}
+
+.crew-member-title{
+
+}
+
+.crew-member-quote{
+
+}
+
+.crew-member-bio{
+
+}
+
+.crew-member-email{
+
+}
+
+/*
+Website Fonts: 'Fira Sans', sans-serif; 'Raleway', sans-serif;
+Website Colors: #e6e6e6 (light gray);
+*/
