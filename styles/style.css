@@ -18,7 +18,7 @@ body{
 }
 
 section{
-  padding: .5% 2%;
+  padding: 2% 15%;
 }
 
 div{
@@ -32,7 +32,7 @@ h1, h2, h3, h4{
   line-height: 1.2;
   letter-spacing: -0.03em;
   margin: 0.3rem 0;
-  /* padding: 3.5% 2%; */
+  padding: 1% 2%;
 }
 
 h1{
@@ -53,8 +53,8 @@ h4 {
 
 p{
   line-height: 1.8;
-  margin: 1rem 0;
-  padding: 3.5% 2%;
+  margin: 1% 0;
+  padding: 1% 2%;
 }
 
 a{
@@ -62,6 +62,10 @@ a{
   color: black;
   padding: 2% 4%;
   object-fit: contain;
+}
+
+i{
+  padding: .5rem;
 }
 
 img {
@@ -82,6 +86,26 @@ header{
 footer {
   padding: 1vh 3vw;
 }
+
+.footer-img{
+
+}
+
+.footer-text-left{
+  border-right: 1px solid white;
+
+}
+
+.footer-text-middle{
+  font-size: 2rem;
+  padding: 2rem;
+  line-height: 2;
+}
+
+.footer-text-right{
+  border-left: 1px solid white;
+}
+
 
 /*  utility classes */
 
@@ -105,8 +129,9 @@ footer {
 
 .button{
   padding: 10px;
-  margin:20px;
+  margin-left: 65px;
   text-align: center;
+
 }
 
 .button-picture{
@@ -121,7 +146,7 @@ footer {
 
 .dark{
   color: #e6e6e6;
-  background-color: rgba(152, 152, 131,.8);
+  background-color: rgba(0,0,0,.5);
 }
 
 .light-text{
@@ -154,7 +179,7 @@ header nav a{
   color: white;
 }
 
-header nav a:hover{
+header nav a:hover, footer nav a:hover{
   color: font-weight: bold;
   border-bottom: 2px solid white;
   transition: ease-in-out 0.15s;
@@ -214,10 +239,20 @@ a:hover{
 
 /* Location Page */
 
-.bg-image-columns{
+.value-box{
   text-align: center;
   padding: 2rem;
-  margin: .5rem;
+}
+
+.overlay-pic{
+
+}
+
+.overlay-text{
+  position: relative;
+  left: -4rem;
+  background-color: rgba(255, 255, 255, 0.47);
+  color: black;
 }
 
 a.bg-image:hover{
