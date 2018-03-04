@@ -21,10 +21,6 @@ section{
   padding: 5% 15%;
 }
 
-div{
-  padding: 3.5% 2%;
-  /* margin: .2rem .2rem; */
-}
 
 h1, h2, h3, h4{
   font-family: 'Fira Sans', sans-serif;
@@ -188,16 +184,42 @@ li{
 }
 
 .banner {
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 0;
+
 }
 
-.banner.bg-img{
+.banner .bg-img{
   filter: saturate(40%);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
   color: rgba(10, 10, 10, 0.7686274509803922);
+}
+
+.banner-image{
+  height: 90vh;
+}
+
+.banner-content {
+  position: relative;
+  width: 200%;
+  /* margin-left: -20%; */
+  background-color: #f9f9f9;
+  padding: 3rem;
+}
+
+.banner-content h1, .banner-content h3{
+  font-family:'Over the Rainbow', cursive;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  padding: 1.5% 2%;
+}
+
+.banner-content h1{
+  letter-spacing: .4rem;
 }
 
 
@@ -215,21 +237,6 @@ header nav a:hover, footer nav a:hover{
   background-color: #f0f0f0;
 }
 
-.banner-content {
-  height: 100%;
-}
-
-.banner-content h1, .banner-content h3{
-  font-family:'Over the Rainbow', cursive;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: .1rem;
-  padding: 1.5% 2%;
-}
-
-.banner-content h1{
-  letter-spacing: .4rem;
-}
 
 .bg-image{
   background-position: center;
