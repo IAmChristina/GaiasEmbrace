@@ -9,25 +9,26 @@
 
 </head>
 <body>
-  <header class="banner bg-img" style="background-image:url('{{page.banner-image}}')">
-    <!-- background image -->
-    <nav class="grid-spaceBetween-noGutter">
-      <div class="col left">
-        <a href="#"> Home</a>
-        <a href="#"> About</a>
-      </div>
-      <div class="col right">
-          <a href="#"> Contact</a>
-          <a href="#"> Join Us</a>
-      </div>
+  <header class="grid-spaceBetween-noGutter">
+    <div class="col-2">
+      <img class="header-img" src="images/Logo.png">
+    </div>
+    <nav class="col-6">
+        <a href="#"> Location</a>
+        <a href="#"> Ships</a>
+        <a href="#"> About Us</a>
+        <a href="#"> Contact</a>
     </nav>
+  </header>
+
+  <section class="banner bg-img" style="background-image:url('{{page.banner-image}}')">
     <div class="banner-content grid-middle-center-noGutter">
       <div class="col-12">
         <h1>{{page.title}}</h1>
         <h3>{{page.subtitle}}</h3>
       </div>
     </div>
-  </header>
+  </section>
 
 {{content}}
 
@@ -35,7 +36,7 @@
       <div class="grid-noGutter">
         <div class="col-4 grid-center">
           <div class="col-12">
-            <img class=" footer-logo" src="images/logo.png" alt="logo"/>
+            <img class="footer-logo" src="images/logo.png" alt="logo"/>
           </div>
           <div class="grid col-12">
             <h4>Follow Us</h4>

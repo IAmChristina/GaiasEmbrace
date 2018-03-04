@@ -81,7 +81,11 @@ padding: 2%;
 /* header and footer */
 
 header{
+  padding: 0 15%;
+}
 
+header img{
+  height: 4.2rem;
 }
 
 footer {
@@ -90,6 +94,7 @@ footer {
 
 .footer-logo{
   max-width: 30%;
+
 }
 
 .footer-text-middle{
@@ -195,23 +200,19 @@ li{
   color: rgba(10, 10, 10, 0.7686274509803922);
 }
 
-header nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  font-size: 1.2rem;
-  padding: 5vh 5vw;
-  background: linear-gradient(rgba(6, 6, 6, 0.53), rgba(255, 255, 0, 0));
-}
 
 header nav a{
-  color: white;
+  color: black;
+  padding: 1.5rem;
+  display: inline-block;
 }
 
 header nav a:hover, footer nav a:hover{
-  color: font-weight: bold;
-  border-bottom: 2px solid white;
+  color: #e0e0e0;
+  /* font-weight: bold; */
+  /* border-bottom: 2px solid white; */
   transition: ease-in-out 0.15s;
+  background-color: #f0f0f0;
 }
 
 .banner-content {
