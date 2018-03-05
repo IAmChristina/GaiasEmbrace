@@ -135,11 +135,11 @@ li{
 
 .footer-quote{
   font-size: .75rem;
-  padding-left: 18%;
+  /* padding-left: 18%; */
   /* padding-right: 25%; */
   letter-spacing: .1rem;
   font-family: 'Over the Rainbow', cursive;
-  text-align: center;
+  /* text-align: center; */
 
 }
 
@@ -325,6 +325,11 @@ header nav a:hover, footer nav a:hover{
   font-size: .85rem;
 }
 
+.big-text{
+  font-size: 1.15rem;
+  color: #e6e6e6;
+}
+
 .feature-block.header{
 
 }
@@ -384,6 +389,21 @@ header nav a:hover, footer nav a:hover{
 /* Ships Page */
 
 
+#ship-models {
+  position: relative;
+  margin-left: -80px;
+  max-width: 200px;
+}
+
+.ship-overlay-paragraphs{
+  position: relative;
+  width: 150%;
+  margin-left: -20%;
+  background-color: #f9f9f9;
+  color: #7d7d7d;
+  padding: 1.5rem;
+}
+
 
 /* Crew Page */
 
@@ -432,7 +452,21 @@ header nav a:hover, footer nav a:hover{
   padding-bottom: 35%;
 }
 
-#gallery{
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 /*
