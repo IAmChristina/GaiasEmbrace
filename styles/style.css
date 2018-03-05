@@ -75,7 +75,7 @@ a{
 }
 
 footer .fab{
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 1rem;
 }
 
@@ -95,11 +95,11 @@ header{
 }
 
 header img{
-  height: 4.2rem;
+  height: 3.8rem;
 }
 
 footer {
-  padding: 1vh 3vw;
+  padding: 3%;
 }
 
 .footer-logo{
@@ -124,13 +124,18 @@ footer p{
   text-align: center;
 }
 
-li{
+footer a{
+font-size: .9rem;
+}
+
+footer li{
     list-style-type: none;
-    font-size: 1.2rem;
-    line-height: 2.0;
+    /* font-size: 1.2rem; */
+    /* line-height: 2.0; */
     text-align: center;
     /* display: flex; */
     align-items: center;
+    margin-bottom: .5rem;
 }
 
 .footer-quote{
@@ -292,7 +297,7 @@ header nav a:hover, footer nav a:hover{
   /* font-weight: bold; */
   /* border-bottom: 2px solid white; */
   transition: ease-in-out 0.15s;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
 }
 
 
