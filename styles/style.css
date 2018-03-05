@@ -15,6 +15,7 @@
 body{
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
+  color: #030240;
 }
 
 section{
@@ -29,6 +30,7 @@ h1, h2, h3, h4{
   letter-spacing: -0.03em;
   margin: 0.3rem 0;
   padding: 1% 2%;
+  color:#030240;
 }
 
 h1{
@@ -58,6 +60,18 @@ a{
   color: black;
   padding: 2% 4%;
   object-fit: contain;
+}
+
+/* Position Helpers */
+.relative {
+  position: relative;
+}
+.absolute-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 footer .fab{
@@ -90,29 +104,43 @@ footer {
 
 .footer-logo{
   max-width: 30%;
+  filter: invert(100%);
 
 }
 
 .footer-text-middle{
-  font-size: 2rem;
   line-height: 2;
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
 
+footer p{
+  font-size: 1.2rem;
+}
+
 .footer nav{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   text-align: center;
 }
 
 li{
     list-style-type: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2.0;
     text-align: center;
-    display: flex;
+    /* display: flex; */
     align-items: center;
+}
+
+.footer-quote{
+  font-size: .75rem;
+  padding-left: 18%;
+  /* padding-right: 25%; */
+  letter-spacing: .1rem;
+  font-family: 'Over the Rainbow', cursive;
+  text-align: center;
+
 }
 
 
@@ -167,7 +195,11 @@ li{
 
 .dark{
   color: #e6e6e6;
-  background-color: rgba(0,0,0,.5);
+  background-color: #222231;
+}
+
+.dark *{
+  color: white;
 }
 
 .light-text{
@@ -177,6 +209,10 @@ li{
 
 .light{
   background-color: rgba(183, 159, 172,.5);
+}
+
+.bg-grey {
+  background-color: #7d7d7d;
 }
 
 .feature-block{
@@ -222,6 +258,28 @@ li{
   letter-spacing: .4rem;
 }
 
+.description-block{
+  padding: 10% 15%;
+}
+
+.description-block p{
+  font-size: .85rem;
+}
+
+.description-block-heading{
+  padding-right: 10%;
+
+}
+
+.description-block-heading h2{
+  font-size: 1.5rem;
+  color: #7d7d7d;
+}
+
+.description-block-heading p{
+  font-size: .85rem;
+  color: #7d7d7d;
+}
 
 header nav a{
   color: black;
@@ -246,10 +304,13 @@ header nav a:hover, footer nav a:hover{
   /* height: auto; */
 }
 
-a:hover{
-
+.grow {
+  transition: all .5s ease-in-out;
 }
 
+.grow:hover {
+  transform: scale(1.5);
+ }
 
 .special-font{
   font-family:'Over the Rainbow', cursive;
@@ -280,30 +341,44 @@ a:hover{
 
 /* Location Page */
 
+#why-ojo {
+  position: relative;
+  margin-left: -80px;
+  max-width: 200px;
+}
+
 .value-box{
   text-align: center;
   padding: 2rem;
 }
 
+.value-box h3{
+  margin: 1rem 0 0 0;
+}
+
 .green-background{
-  background-color: rgba(4, 113, 7, 0.5);
-  filter: grayscale(35%);
-}
-
-.overlay-pic{
 
 }
 
-.overlay-text{
+.location-overlay-heading{
+  background-color: #7d7d7d;
+  /* height: -webkit-fill-available; */
+  width: 150%;
+  margin-left: -75px;
+  text-align: center;
+}
+
+.location-overlay-paragraphs{
   position: relative;
-  width: 120%;
+  width: 150%;
   margin-left: -20%;
-  /* background-color: rgba(255, 255, 255, 0.47); */
+  background-color: #f9f9f9;
   color: black;
+  padding: 1.5rem;
 }
 
-a.bg-image:hover{
-
+.location-overlay-paragraphs h2{
+  font-size: 1.5em;
 }
 
 /* Ships Page */
@@ -330,6 +405,34 @@ a.bg-image:hover{
 
 .crew-member-email{
 
+}
+
+/*
+** GALLERY SECTION
+*/
+.gallery-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-image-tall {
+  padding-bottom: 150%;
+}
+
+.gallery-image-regular{
+  padding-bottom: 80%;
+}
+
+.gallery-image-square {
+  padding-bottom: 70%;
+}
+
+.gallery-image-panorama {
+  padding-bottom: 35%;
+}
+
+#gallery{
 }
 
 /*

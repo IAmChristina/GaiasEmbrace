@@ -17,26 +17,45 @@ values:
     icon: fa-recycle fa-3x
     description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll      burmese ragdoll american bobtail.
 links:
-  - name: site
+  - name: tourism
     image: images/sand.jpg
     url: http://taos.org
-  - name: another site
+  - name: maps
     image: images/sand.jpg
     url: http://taos.org
-  - name: third site
+  - name: recreation
     image: images/sand.jpg
     url: http://taos.org
-  - name: last site
+  - name: dining
     image: images/sand.jpg
     url: http://taos.org
+pictures:
+  - image: images/sunrise.jpg
+  - image: images/river2.jpg
+  - image: images/mountains.jpg
+  - image: images/snow.jpg
+  - image: images/gorge.webp
+  - image: images/mainhouseJK.jpeg
+  - image: images/taosPueblo.jpg
 ---
 
-<section class="grid-center centered">
-  <p>Nestled in the San Luis valley of northern New Mexico and southern Colorado...we've created a community... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+<section class="grid description-block">
+  <div class="col-4 description-block-heading">
+    <h2>Welcome to our Community</h2>
+    <p>Subtitle Ut enim ad minim veniam, quis nostrud exercitation</p>
+  </div>
+  <div class="col-4">
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+  <div class="col-4">
+    <p>Nestled in the San Luis valley of northern New Mexico and southern Colorado...we've created a community... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+    </p>
+  </div>
 </section>
 <section class="grid-noGutter dark">
-  <h2 class="col-12-grid-center">Community Values</h2>
+    <div class="col-12">
+      <h2 class="centered">Community Values</h2>
+    </div>
   {% for value in page.values %}
   <div class="col-6">
     <div class="value-box">
@@ -47,26 +66,64 @@ links:
   </div>
   {% endfor %}
 </section>
-<section class="grid-noGutter less-padding">
-  <div class="col-4 grid-noGutter centered green-background">
-    <h2 class="col-12-middle special-font bold">Why Ojo Caliente?</h2>
+<section class="grid">
+  <div class="col-3 bg-grey grid">
+    <div class="col-12 relative">
+      <div class="grid-middle absolute-fill">
+        <h2 id="why-ojo" class="special-font bold">Why Ojo Caliente?</h2>
+      </div>
+    </div>
   </div>
   <div class="col-8">
-    <div class="padding-sides overlay-text">
-      <h4>Resources of the Land</h4>
+    <div class="location-overlay-paragraphs">
+      <h2>Resources of the Land</h2>
       <p class="small-text">Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten. Sphynx   bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american   bobtail.iger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten.  Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american  bobtail.</p>
-      <h4>What's Nearby</h4>
+      <h2>What's Nearby</h2>
       <p class="small-text">Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten. Sphynx   bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american   bobtail.iger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold sphynx. Kitten.  Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll burmese ragdoll american  bobtail.</p>
-      <div class="grid-noGutter">
+      <!-- <div class="grid-noGutter">
         {% for link in page.links %}
         <div class="col-3">
           <a class="button-picture" href="{{link.url}}" style="background-image:url({{link.image}})">
             {{link.name}}
           </a>
         </div>
-        {% endfor %}
+        {% endfor %} -->
       </div>
     </div>
   </div>
+</section>
 
+<section class="gallery grid-middle-center">
+  <div class="col-4">
+    <div class="col-12">
+      <div class="gallery-image  gallery-image-tall" style="background-image: url({{ page.pictures[0].image }})">
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="gallery-image  gallery-image-tall" style="background-image: url({{ page.pictures[1].image }})">
+      </div>
+    </div>
+  </div>
+  <div class="col-8 grid">
+    <div class="col-12">
+      <div class="gallery-image gallery-image-regular" style="background-image: url({{ page.pictures[2].image }})">
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="gallery-image gallery-image-regular" style="background-image: url({{ page.pictures[3].image }})">
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="gallery-image gallery-image-square" style="background-image: url({{ page.pictures[4].image }})">
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="gallery-image gallery-image-square" style="background-image: url({{ page.pictures[5].image }})">
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="gallery-image gallery-image-panorama" style="background-image: url({{ page.pictures[6].image }})">
+    </div>
+  </div>
 </section>

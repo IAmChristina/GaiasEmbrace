@@ -4,23 +4,40 @@ title: Our Ships
 subtitle:
 banner-image: images/eartshipSky.jpg
 values:
-  - name: One Value
+  - name: Feature One
     icon: fa-heart fa-3x
     description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll      burmese ragdoll american bobtail.
-  - name: Second Value
+  - name: Feature Two
     icon: fa-hand-lizard fa-3x
     description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll      burmese ragdoll american bobtail.
-  - name: Third Value
+  - name: Feature Three
     icon: fa-smile fa-3x
     description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll      burmese ragdoll american bobtail.
-  - name: Last Value
+  - name: Feature Four
     icon: fa-recycle fa-3x
     description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll      burmese ragdoll american bobtail.
+  - name: Feature Five
+    icon: fa-recycle fa-3x
+    description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin.Ragdoll      burmese ragdoll american bobtail.
+  - name: Feature Six
+    icon: fa-recycle fa-3x
+    description: Kitten. Sphynx bobcat and birman yet british shorthair yet lynx orgrimalkin.Ragdoll      burmese ragdoll american bobtail.
 ---
 
-<section>
-<div class="grid-spaceBetween-noGutter">
-  <div class="">
+  <section class="grid-middlnoGutter">
+      <div class="col-12">
+        <h2 class="centered">Our Ships Feature:</h2>
+      </div>
+    {% for value in page.values %}
+    <div class="col-4">
+      <div class="value-box">
+        <i class="fas {{value.icon}}"></i>
+        <h3>{{value.name}}</h3>
+        <p>{{value.description}} </p>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
 
   </div>
 </div>
