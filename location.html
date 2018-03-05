@@ -67,11 +67,9 @@ pictures:
   {% endfor %}
 </section>
 <section class="grid">
-  <div class="col-3 bg-grey grid">
-    <div class="col-12 relative">
-      <div class="grid-middle absolute-fill">
+  <div class="col-4 bg-grey grid">
+    <div class="col-12-middle">
         <h2 id="why-ojo" class="special-font bold">Why Ojo Caliente?</h2>
-      </div>
     </div>
   </div>
   <div class="col-8">
@@ -94,36 +92,47 @@ pictures:
 </section>
 
 <section class="gallery grid-middle-center">
-  <div class="col-4">
-    <div class="col-12">
-      <div class="gallery-image  gallery-image-tall" style="background-image: url({{ page.pictures[0].image }})">
+  <div class="col-12 grid">
+    <div class="col-4">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url({{ page.pictures[0].image }})">
       </div>
     </div>
-    <div class="col-12">
-      <div class="gallery-image  gallery-image-tall" style="background-image: url({{ page.pictures[1].image }})">
+    <div class="col-4">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url({{ page.pictures[1].image }})">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url({{ page.pictures[1].image }})">
       </div>
     </div>
   </div>
-  <div class="col-8 grid">
-    <div class="col-12">
+  <div class="col-12 grid">
+    <div class="col-4">
       <div class="gallery-image gallery-image-regular" style="background-image: url({{ page.pictures[2].image }})">
       </div>
     </div>
-    <div class="col-12">
+    <div class="col-4">
+      <div class="gallery-image gallery-image-regular" style="background-image: url({{ page.pictures[3].image }})">
+      </div>
+    </div>
+    <div class="col-4">
       <div class="gallery-image gallery-image-regular" style="background-image: url({{ page.pictures[3].image }})">
       </div>
     </div>
   </div>
-  <div class="col-6">
-    <div class="gallery-image gallery-image-square" style="background-image: url({{ page.pictures[4].image }})">
+  <div class="col-12 grid">
+    <div class="col-4">
+      <div class="gallery-image gallery-image-regular" style="background-image: url({{  page.pictures[4].image }})">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="gallery-image gallery-image-regular" style="background-image: url({{  page.pictures[4].image }})">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="gallery-image gallery-image-regular" style="background-image: url({{  page.pictures[4].image }})">
+      </div>
     </div>
   </div>
-  <div class="col-6">
-    <div class="gallery-image gallery-image-square" style="background-image: url({{ page.pictures[5].image }})">
-    </div>
-  </div>
-  <div class="col-12">
-    <div class="gallery-image gallery-image-panorama" style="background-image: url({{ page.pictures[6].image }})">
-    </div>
-  </div>
+
 </section>

@@ -212,7 +212,7 @@ li{
 }
 
 .bg-grey {
-  background-color: #7d7d7d;
+  background-color: #dcdcdc;
 }
 
 .feature-block{
@@ -348,8 +348,9 @@ header nav a:hover, footer nav a:hover{
 
 #why-ojo {
   position: relative;
-  margin-left: -80px;
+  /* margin-left: -80px; */
   max-width: 200px;
+  padding-left: 1rem;
 }
 
 .value-box{
@@ -375,9 +376,9 @@ header nav a:hover, footer nav a:hover{
 
 .location-overlay-paragraphs{
   position: relative;
-  width: 150%;
+  /* width:  */
   margin-left: -20%;
-  background-color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.5);
   color: black;
   padding: 1.5rem;
 }
