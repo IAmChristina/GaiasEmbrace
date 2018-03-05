@@ -27,31 +27,40 @@ layout: default
   </div>
   <div class="col-8">
     <div class="col-12">
-    <div class="ship-overlay-paragraphs grid">
-      <div class="col-4">
-        <h2>One Bedroom</h2>
-        <p class="small-text">Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold   sphynx. Kitten. Sphynx   bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american   bobtail.iger mouser. Maine coon russian blue lion bombay yet donskoy   scottish fold sphynx. Kitten.  Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin.  Ragdoll burmese ragdoll american  bobtail.</p>
+    <div class="ship-overlay-paragraphs">
+      {% for model in page.models %}
+      <div class="grid padding-bottom-top">
+        <div class="col-4 bg-image" style="background-image: url({{ model.image }})">
+        </div>
+        <div class="col-8">
+          <h3>{{model.name}}</h3>
+          <p class="small-text">{{model.description}}</p>
+        </div>
       </div>
-      <div class="col-4">
-        <h2>Two Bedroom</h2>
-        <p class="small-text">Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold   sphynx. Kitten. Sphynx   bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american   bobtail.iger mouser. Maine coon russian blue lion bombay yet donskoy   scottish fold sphynx. Kitten.  Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin.  Ragdoll burmese ragdoll american  bobtail.</p>
-      </div>
-      <div class="col-4">
-        <h2>Three Bedroom</h2>
-        <p class="small-text">Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold   sphynx. Kitten. Sphynx   bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american   bobtail.iger mouser. Maine coon russian blue lion bombay yet donskoy   scottish fold sphynx. Kitten.  Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin.  Ragdoll burmese ragdoll american  bobtail.</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
   </div>
 </section>
 
-<section class="grid description-block dark">
+<section class="grid dark">
   <div class="col-12 ships-block-heading">
-    <p><span class="big-text">Available as vacation rentals or permanent homes</span>, Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold   sphynx. Kitten. Sphynx   bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american   bobtail.iger mouser. Maine coon russian blue lion bombay yet donskoy   scottish fold sphynx. Kitten.  Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin.  Ragdoll burmese ragdoll american  bobtail. </p>
+    <p><span class="big-text">Available as vacation rentals or permanent homes</span>, Tiger mouser. Maine coon russian blue lion bombay yet donskoy scottish fold   sphynx. Kitten. Sphynx   bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american   bobtail.iger mouser. Maine coon russian blue lion bombay yet donskoy   scottish fold sphynx. Kitten.  Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin.  Ragdoll burmese ragdoll american  bobtail. Maine coon russian blue lion bombay yet donskoy   scottish fold sphynx. Kitten.  Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin.  Ragdoll burmese ragdoll american  bobtail.</p>
   </div>
 </section>
 
-<section class="gallery grid-middle-center">
+<section class="gallery grid-middle-center popup-gallery">
+  <div class="col-12 grid">
+    {% for image in page.pictures limit:6 %}
+    <a class="col-4" href="{{ image.image }}">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url({{ image.image }})">
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- <section class="gallery grid-middle-center">
   <div class="col-12">
     <h2 class="centered special-font"> From the Outside </h2>
   </div>
@@ -119,4 +128,4 @@ layout: default
     </div>
   </div>
 
-</section>
+</section> -->

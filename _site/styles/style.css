@@ -170,6 +170,11 @@ footer li{
   padding: 2.5% 9%;
 }
 
+.padding-bottom-top{
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+
 .less-padding{
   padding: 5% 7%;;
 }
@@ -218,10 +223,6 @@ footer li{
 
 .bg-grey {
   background-color: #dcdcdc;
-}
-
-.feature-block{
-
 }
 
 .banner {
@@ -284,6 +285,16 @@ footer li{
 .description-block-heading p{
   font-size: .85rem;
   color: #7d7d7d;
+}
+
+.homepage-block h2{
+  font-size: 1.5rem;
+  color: #7d7d7d;
+}
+
+.homepage-block p{
+  font-size: .85rem;
+  color: #f9f9f9;
 }
 
 header nav a{
