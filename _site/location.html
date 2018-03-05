@@ -3,15 +3,16 @@
     <meta charset="utf-8">
     <title>Ojo Caliente</title>
     <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow|Fira+Sans:400,500,700|Raleway:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/styles/gridlex.css">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
 </head>
 <body>
   <header class="grid-spaceBetween-noGutter">
     <div class="col-2">
-      <img class="header-img" src="images/Logo.png">
+      <img class="header-img" src="/images/Logo.png">
     </div>
     <nav class="col-6">
         <a href="#"> Location</a>
@@ -35,7 +36,7 @@
 <section class="grid description-block">
   <div class="col-4 description-block-heading">
     <h2>Welcome to our Community</h2>
-    <p>Subtitle Ut enim ad minim veniam, quis nostrud exercitation</p>
+    <p>Subtitle Ut enim ad minim veniam, quis nostrud</p>
   </div>
   <div class="col-4">
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -126,12 +127,12 @@
   </div>
 </section>
 
-<section class="gallery grid-middle-center">
+<!-- <section class="gallery grid-middle-center popup-gallery">
   <div class="col-12 grid">
-    <div class="col-4">
+    <a class="col-4" href="images/sunrise.jpg">
       <div class="gallery-image  gallery-image-regular" style="background-image: url(images/sunrise.jpg)">
       </div>
-    </div>
+    </a>
     <div class="col-4">
       <div class="gallery-image  gallery-image-regular" style="background-image: url(images/river2.jpg)">
       </div>
@@ -169,7 +170,47 @@
       </div>
     </div>
   </div>
+</section> -->
 
+
+<!-- to make the scroll gallery stop after 6 images
+     - add: title="" after "" to add titles to each picture
+ -->
+
+<section class="gallery grid-middle-center popup-gallery">
+  <div class="col-12 grid">
+    
+    <a class="col-4" href="images/sunrise.jpg">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url(images/sunrise.jpg)">
+      </div>
+    </a>
+    
+    <a class="col-4" href="images/river2.jpg">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url(images/river2.jpg)">
+      </div>
+    </a>
+    
+    <a class="col-4" href="images/mountains.jpg">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url(images/mountains.jpg)">
+      </div>
+    </a>
+    
+    <a class="col-4" href="images/snow.jpg">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url(images/snow.jpg)">
+      </div>
+    </a>
+    
+    <a class="col-4" href="images/gorge.webp">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url(images/gorge.webp)">
+      </div>
+    </a>
+    
+    <a class="col-4" href="images/mainhouseJK.jpeg">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url(images/mainhouseJK.jpeg)">
+      </div>
+    </a>
+    
+  </div>
 </section>
 
 
@@ -177,7 +218,7 @@
       <div class="grid-noGutter">
         <div class="col-4 grid-middle-center">
           <div class="col-12 centered">
-            <img class="footer-logo" src="images/logo.png" alt="logo"/>
+            <img class="footer-logo" src="/images/logo.png" alt="logo"/>
           </div>
         </div>
         <div class="col-1">
@@ -206,6 +247,7 @@
       <div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
   <script src="/js/main.js"> </script>
 
 </body>

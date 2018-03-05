@@ -1,4 +1,4 @@
 collections:
-  recipes:
+  earthships:
     output: true
-    permalink: /:categories/:path
+    permalink: /earthships/:path

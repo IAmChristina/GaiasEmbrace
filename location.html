@@ -31,7 +31,9 @@ links:
     url: http://taos.org
 pictures:
   - image: images/sunrise.jpg
+    alt: Hello
   - image: images/river2.jpg
+    alt: Goodbye
   - image: images/mountains.jpg
   - image: images/snow.jpg
   - image: images/gorge.webp
@@ -42,7 +44,7 @@ pictures:
 <section class="grid description-block">
   <div class="col-4 description-block-heading">
     <h2>Welcome to our Community</h2>
-    <p>Subtitle Ut enim ad minim veniam, quis nostrud exercitation</p>
+    <p>Subtitle Ut enim ad minim veniam, quis nostrud</p>
   </div>
   <div class="col-4">
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -91,12 +93,12 @@ pictures:
   </div>
 </section>
 
-<section class="gallery grid-middle-center">
+<!-- <section class="gallery grid-middle-center popup-gallery">
   <div class="col-12 grid">
-    <div class="col-4">
+    <a class="col-4" href="{{ page.pictures[0].image }}">
       <div class="gallery-image  gallery-image-regular" style="background-image: url({{ page.pictures[0].image }})">
       </div>
-    </div>
+    </a>
     <div class="col-4">
       <div class="gallery-image  gallery-image-regular" style="background-image: url({{ page.pictures[1].image }})">
       </div>
@@ -134,5 +136,20 @@ pictures:
       </div>
     </div>
   </div>
+</section> -->
 
+
+<!-- to make the scroll gallery stop after 6 images
+     - add: title="{{image.alt}}" after "{{image.image}}" to add titles to each picture
+ -->
+
+<section class="gallery grid-middle-center popup-gallery">
+  <div class="col-12 grid">
+    {% for image in page.pictures limit:6 %}
+    <a class="col-4" href="{{ image.image }}">
+      <div class="gallery-image  gallery-image-regular" style="background-image: url({{ image.image }})">
+      </div>
+    </a>
+    {% endfor %}
+  </div>
 </section>

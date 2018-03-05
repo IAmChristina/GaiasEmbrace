@@ -268,7 +268,7 @@ footer li{
 }
 
 .description-block p{
-  font-size: .85rem;
+  font-size: 1rem;
 }
 
 .description-block-heading{
@@ -331,21 +331,11 @@ header nav a:hover, footer nav a:hover{
 }
 
 .big-text{
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: #e6e6e6;
 }
 
-.feature-block.header{
-
-}
-
-.feature-block-icon{
-
-}
-
-.feature-block-p{
-
-}
+.
 
 /* Home page */
 
@@ -396,20 +386,26 @@ header nav a:hover, footer nav a:hover{
 
 
 #ship-models {
-  position: relative;
-  margin-left: -80px;
+  /* position: relative; */
+  /* margin-left: -80px; */
   max-width: 200px;
+  padding-left: 1rem;
+  text-align: center;
 }
 
 .ship-overlay-paragraphs{
   position: relative;
-  width: 150%;
+  /* width: 150%; */
   margin-left: -20%;
-  background-color: #f9f9f9;
-  color: #7d7d7d;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
   padding: 1.5rem;
 }
 
+.ships-block-heading p{
+  font-size: 1rem;
+  color: #7d7d7d;
+}
 
 /* Crew Page */
 
