@@ -158,6 +158,10 @@ footer li{
 
 /*  utility classes */
 
+.pos-relative {
+  position: relative;
+}
+
 .left{
   text-align: left;
   padding-left: 1rem;
@@ -183,6 +187,10 @@ footer li{
 
 .less-padding{
   padding: 5% 7%;;
+}
+
+.margin-neg-bottom{
+  margin-bottom: -5%;
 }
 
 .button{
@@ -229,6 +237,9 @@ footer li{
 
 .bg-grey {
   background-color: #dcdcdc;
+}
+.bg-light-grey{
+  background-color: #f1f1f1;
 }
 
 .banner {
@@ -303,6 +314,23 @@ footer li{
   color: #f9f9f9;
 }
 
+.drop-down-nav{
+  position: relative;
+}
+
+.drop-down-nav ul{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  background-color: #fff;
+  list-style-type: none;
+}
+
+.drop-down-nav:hover ul{
+  display: block;
+}
+
 header nav a{
   color: black;
   padding: 1.5rem;
@@ -310,7 +338,7 @@ header nav a{
 }
 
 header nav a:hover, footer nav a:hover{
-  color: #e0e0e0;
+  color: #7d7d7d;
   /* font-weight: bold; */
   /* border-bottom: 2px solid white; */
   transition: ease-in-out 0.15s;
@@ -371,6 +399,31 @@ header nav a:hover, footer nav a:hover{
   /* margin-left: -80px; */
   max-width: 200px;
   padding-left: 1rem;
+}
+
+#why-ojo-background-image {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -80px;
+  left: -140px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/teamGroup.jpg);
+  z-index: 0;
+  filter:saturate(40%);
+
+}
+
+#why-ojo-content {
+  position: relative;
+  z-index: 1;
+  top: 150px;
+  background-color: white;
+  left: 88px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,.06);
+  margin-bottom: 24%;
 }
 
 .value-box{

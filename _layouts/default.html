@@ -15,10 +15,19 @@
       <img class="header-img" src="/images/Logo.png">
     </div>
     <nav class="col-6">
-        <a href="/location"> Location</a>
-        <a href="/earthships/phoenix"> Ships</a>
-        <a href="/team"> About Us</a>
-        <a href="#"> Contact</a>
+      <a href="/location"> Location</a>
+      <span class="drop-down-nav">
+        <a href="#"> Ships</a>
+        <ul>
+          {% for ship in site.earthships %}
+          <li>
+            <a href="{{ship.url}}">{{ship.title}}</a>
+          </li>
+            {% endfor %}
+        </ul>
+      </span>
+      <a href="/team"> About Us</a>
+      <a href="#"> Contact</a>
     </nav>
   </header>
 
@@ -52,10 +61,10 @@
             <i class="fab fa-twitter-square"></i>
           </div>
         </div>
-        <div class="col-4 grid-middle-center">
+        <div class="col-4-middle-center">
             <nav>
               <li><a href="/location"> Location</a></li>
-              <li><a href="/earthships/phoenix"> Ships</a></li>
+              <!-- <li><a href="/earthships/phoenix"> Ships</a></li> -->
               <li><a href="/team"> About Us</a></li>
               <li><a href="#"> Contact</a></li>
             </nav>

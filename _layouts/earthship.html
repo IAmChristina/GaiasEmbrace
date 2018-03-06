@@ -50,6 +50,9 @@ layout: default
 </section>
 
 <section class="gallery grid-middle-center popup-gallery">
+  <div class="col-12">
+    <h2 class="special-font centered">{{page.galleryTitle}}</h2>
+  </div>
   <div class="col-12 grid">
     {% for image in page.pictures limit:6 %}
     <a class="col-4" href="{{ image.image }}">
