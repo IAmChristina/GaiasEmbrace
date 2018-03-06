@@ -1,0 +1,61 @@
+---
+layout: default
+title: Our Crew
+subtitle: Meet the Team
+banner-image: images/teamMain.jpg
+bios:
+  - name: Christina
+    picture: images/sunrise.jpg
+    title: Co-founder and Operations Director
+    quote: <q>You may say I'm a dreamer, but I'm not the only one</q>
+    bio: short bio kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american bobtail.
+    email:
+  - name: John
+    picture: images/sunrise.jpg
+    title: Co-Founder and Community Manager
+    quote: <q>Do or do not, there is no try</q>
+    bio: short bio kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american bobtail.
+    email:
+  - name: Adrienne
+    picture: images/sunrise.jpg
+    title: Director of Education and Outreach
+    quote: <q>Forget regret, or life is yours to miss</q>
+    bio: short bio kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american bobtail.
+    email:
+  - name: Dan
+    picture: images/sunrise.jpg
+    title: General Contractor
+    quote: <q>I love building</q>
+    bio: short bio kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american bobtail.
+    email:
+  - name: Ali
+    picture: images/sunrise.jpg
+    title: Director of Sustainability
+    quote: <q>Sustainability is Life</q>
+    bio: short bio kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american bobtail.
+    email:
+  - name: David
+    picture: images/sunrise.jpg
+    title: Activities and Musical Coordination Director
+    quote: <q>Singing is fun</q>
+    bio: short bio kitten. Sphynx bobcat and birman yet british shorthair yet lynx or grimalkin. Ragdoll   burmese ragdoll american bobtail.
+    email:
+---
+
+<section class="grid-noGutter">
+    <!-- <div class="col-12">
+      <h2 class="centered">Meet the Team</h2>
+    </div> -->
+  {% for bios in page.bios %}
+  <div class="col-6">
+    <div class="value-box">
+      <div class="col-12 bg-image-padding-bottom" style="background-image:url('{{bios.picture}}')"></div>
+      <h3 class="special-font">{{bios.name}}</h3>
+      <h4>{{bios.title}}</h4>
+      <p class="small-text">{{bios.quote}} </p>
+      <p>{{bios.bio}}</p>
+      <p><a href="#">Email {{bios.name}}</a></p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
