@@ -7,7 +7,7 @@ layout: default
         <h2 class="centered">Features:</h2>
       </div>
     {% for feature in page.features %}
-    <div class="col-4">
+    <div class="col-4_xs-12">
       <div class="value-box">
         <i class="fas {{feature.icon}}"></i>
         <h3>{{feature.name}}</h3>
@@ -18,21 +18,21 @@ layout: default
 </section>
 
 <section class="grid">
-  <div class="col-4 bg-grey grid">
+  <div class="col-4_xs-12 bg-grey grid">
     <div class="col-12-middle">
       <div class="grid-middle">
         <h2 id="ship-models" class="special-font bold">Our Models</h2>
       </div>
     </div>
   </div>
-  <div class="col-8">
+  <div class="col-8_xs-12">
     <div class="col-12">
     <div class="ship-overlay-paragraphs">
       {% for model in page.models %}
       <div class="grid padding-bottom-top">
-        <div class="col-4 bg-image" style="background-image: url({{ model.image }})">
+        <div class="col-4_xs-12 bg-image" style="background-image: url({{ model.image }})">
         </div>
-        <div class="col-8">
+        <div class="col-8_xs-12">
           <h3>{{model.name}}</h3>
           <p class="small-text">{{model.description}}</p>
         </div>
@@ -55,7 +55,7 @@ layout: default
   </div>
   <div class="col-12 grid">
     {% for image in page.pictures limit:6 %}
-    <a class="col-4" href="{{ image.image }}">
+    <a class="col-4_xs-12" href="{{ image.image }}">
       <div class="gallery-image  gallery-image-regular" style="background-image: url({{ image.image }})">
       </div>
     </a>
