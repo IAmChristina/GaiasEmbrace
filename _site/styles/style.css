@@ -570,7 +570,9 @@ header nav a:hover, footer nav a:hover{
     object-fit: contain;
     display: inline-block;
   }
-
+ #why-ojo{
+   text-align: left;
+ }
 }
 /* ----- end of 500px media queries ------- */
 
